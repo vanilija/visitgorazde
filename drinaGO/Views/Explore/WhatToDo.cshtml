@@ -1,0 +1,73 @@
+﻿@{ 
+    ViewBag.Title = "What To Do";
+
+}
+
+@{ 
+    ViewBag.Header = "What is available for visit?";
+    ViewBag.SubHeader = "Idea for showing places to stay, text below is just an example";
+}
+
+<!-- Soon to be slider -->
+
+<div class="carousel" fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1 class="white">What to do?</h1>
+                    <h4 class="white">Activities to do while staying in Gorazde</h4>
+                </hgroup>
+                <form style="display:inline" action="http://drinago.eu.central-1.elasticbeanstalk.com/home/notice" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- What To Do -->
+
+<div class="sadrzaj">
+    <h3>@ViewBag.Header</h3>
+    <hr />
+    <h4>@ViewBag.SubHeader</h4>
+    <p>
+        Few sentences about place of interest no more than, three or four sentences, if the place
+        is for example hotel, include things like:
+        <ul>
+            <li>How many rooms does it have?</li>
+            <li>How much money does it cost to rent a room for a night, two, three?</li>
+            <li>Do they serve breakfast, lunch, dinner?</li>
+            <li>Include the amount of seats, include the menu, do they have specials?</li>
+            <li>Include working hours, does it have WIFI connection etc.</li>
+            <li>
+                Include few pictures, or just one, then when users click on Learn more button, 
+                take them to a new page with more detailed information about the place of interest.
+            </li>
+            <li>Possibly add Google Maps Tour guide info page.</li>
+        </ul>
+    </p>
+    <form style="display:inline" action="http://drinago.eu.central-1.elasticbeanstalk.com/home/notice" method="get">
+        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+    </form>
+</div>
+
+<!-- Inline styling -->
+
+<style>
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        border-radius: 3px;
+    }
+</style>
+

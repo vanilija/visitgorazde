@@ -1,0 +1,240 @@
+﻿/*========== BEGINNING OF CUSTOM CSS ========== */
+
+.matdes,
+.sadrzaj,
+.SadrzajIndex {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.rowcss {
+    background-color:  #2196f3;
+}
+
+.footertxt {
+    color: white;
+    font-weight: 300;
+}
+
+a {
+    color: white;
+}
+
+body {
+   /*background-color: orange;*/ /* #E3F2FD; */
+font-family: 'Roboto', sans-serif; /*Header & body */
+    margin: 10px;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail img {
+    height:auto;
+    position: center;
+}
+
+.thumbnail img {
+    min-height: 200px;
+    height: 100px;
+
+}
+
+
+h1.white, h2.white, h3.white {
+    font-family: Courier New, Courier, monospaceLucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode, Arial, Helvetica, sans-serif;
+ 
+}
+
+/*
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel{
+    position: relative;
+    height: 20vh;
+}
+
+    .fade-carousel .carousel-inner .item {
+        height: 20vh;
+    }
+
+fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+
+.fade-carousel .carousel-indicators > li.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+font-family: 'Roboto', sans-serif;
+}
+
+    .hero h1 {
+        font-size: 4.5em;
+        font-weight:400;
+        margin: 0;
+        padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    }
+
+/*.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}*/
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {
+    padding: 10px 15px;
+}
+
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: white; /*#f5f5f5*/
+    background-color: orange;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+    text-transform: capitalize;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5,
+.fade-carousel .slides .slide-6,
+.fade-carousel .slides .slide-7,
+.fade-carousel .slides .slide-8,
+.fade-carousel .slides .slide-9 {
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Slider below is for homepage only*/
+/*Slider picture links are below*/
+.fade-carousel .slides .slide-1 {
+    background-image: url(http://i.imgur.com/R90vJw9.jpg);
+}
+.fade-carousel .slides .slide-2 {
+    background-image: url(https://www.afklcargo.com/US/common/img/1800x641_banner/1800x641_banner_ecommerce.jpg);
+    /*background-image: url(http://i.imgur.com/xVeMS1n.jpg);*/
+}
+.fade-carousel .slides .slide-3 {
+    background-image: url(http://i.imgur.com/7tu5zvq.jpg);
+}
+.fade-carousel .slides .slide-4 {
+    background-image: url(http://i.imgur.com/P6R1Ybb.jpg);
+}
+.fade-carousel .slides .slide-5 {
+    background-image: url(http://i.imgur.com/FlmNF8T.jpg);
+}
+.fade-carousel .slides .slide-6 {
+    background-image: url(http://i.imgur.com/HLzA6KA.jpg);
+}
+.fade-carousel .slides .slide-7 {
+    background-image: url(http://i.imgur.com/PUcIEtm.jpg);
+}
+.fade-carousel .slides .slide-8 {
+    background-image: url(https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/13325698_1086492071422430_6486299785565433606_n.jpg?oh=edc75067f34005b71585de016d1e92ae&oe=583111F0);
+}
+.fade-carousel .slides .slide-9 {
+  background-image: url(http://ethniqamagazine.dk/wp-content/uploads/cafee.jpg);
+}
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px) {
+    .hero {
+        width: 980px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero h1 {
+        font-size: 3.5em;
+font-family: 'Roboto', sans-serif; /*roboto*/
+        color: white;
+    }
+
+    .hero h3 {
+        font-size: 1.3em;
+font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+}
+
+.slide1 img {
+    width: auto;
+    height: 225px;
+    max-height: 225px;
+}
+
+.white {
+    color: ghostwhite;
+}
+
+
+
+/*========== END OF CUSTOM ==========*/
+
+

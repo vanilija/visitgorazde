@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Restaurants";
+
+}
+@{
+    ViewBag.Header = "Translation Notice";
+    ViewBag.Vision = "Bed & Breakfast";
+}
+<body class="aboutsadrzaj">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-2"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h2 class="white">Restaurants</h2>
+                        <h3 class="white">in Gorazde</h3>
+                    </hgroup>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Editor's Notice ========== -->
+    <div class="section1">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <h3>@ViewBag.Header</h3>
+            <hr />
+            <p align="justify">
+                Translation of Bosnian language to English is in progress. Keep checking the website for changes.
+            </p>
+        </div>
+    </div>
+    <br>
+  
+</body>
+<style>
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        border-radius: 3px;
+    }
+
+    .aboutsadrzaj {
+       background-image: url('../../Content/Walls/weather.png');
+    }
+
+    .linkgithub {
+        color: black;
+    }
+</style>
