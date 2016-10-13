@@ -10,73 +10,51 @@
 }
 
 <body class="indexsadrzaj">
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-        <div class="carousel-inner">
-            <div class="item slides active">
-                <div class="slide-3"></div>
-                <div class="hero">
-                    <hgroup>
-                        <h2 class="white">Motels</h2>
-                        <h3 class="white">in Gorazde</h3>
-                        <!--<h4 class="white">For more infomation, click learn more</h4>-->
-                    </hgroup>
-                    <!--<form style="display: inline" action="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice" method="get">
-                        <button class="btn btn-hero btn-lg" role="button">Learn more</button></form>-->
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="bg-1 text-center">
+        <h1 class="">MOTELS</h1>
+    </section>
 
- <div class="sadrzaj">
-     <h3>@ViewBag.Notice</h3>
-     <hr />
-     <p align="justify">For now, this text area is in Bosnian. At the moment we are doing collecting and translating work. Please, be patient, and keep looking for the changes on the website.</p>
- </div>
-    <br />
     <div class="sadrzaj">
-        <h3>@ViewBag.Geology</h3>
-        <p align="justify">
-            Današnja geološka građa i petrografski sastav terena Općine Goražde je rezultat duge geološke prošlosti u kojoj
-            su se zbili događaji koji su uvjetovali stvaranje raznovrsnih stijena - magmatskih, sedimentnih i metamorfnih stijena, te brojnih orudnjenja.
-            Na ovom prostoru možemo promatrati eru paleozoika koja je najdominantnija, međutim tu je još zastupljen mezozoik i kenozoik.
-        </p>
-    </div>
-    <br />
-    <div class="sadrzaj">
-        <h3>@ViewBag.Paleozoic</h3>
-        <p align="justify">
-            Naslage paleozoika uglavnom su zastupljenje klasticnim negolikarbonatnim slojevima. 
-            Metamorfizam stijena mjestimicno je vrlo izrazen, do te mjere da su pojedini slojevi do te mjere izmjesani, da je tesko izvrsiti hronologiju i genezu.
-            Sire podrucje Gorazda gradjeno je od paleozojskih skriljaca i pjescara, karbona i perma. 
-            U strukturnom pogledu, skriljci i pjescari su svugdje kompaktni odnosno jednaki.
-            Usljed metamorfizma, pojedini skriljci izbijaju cak i na povrsinu. 
-            Sa druge strane pjescari izbijaju samo mjestimicno najcesce kao ulosci skriljcima. 
-            Krecnjaci su na podlozi skriljaca te na teritoriju danasnje Opcine Gorazde nema tipski razvijenog krsa kao u Hercegovini. 
-            Sa tektonskog stanovista Opcina Gorazde pripada unutrasnjim dinaridima, geotektonskom kompleksu dinarida.
-            Pojas cine paleozoik Prace, takozvana prelazna zona (Priboj - Bosanska kostajnica). 
-            Ova granica od Prace do Priboja je apkrosimativna i uglavnom prati rasjede a pokrivena je mezozojskim krecnjacima u vidu navlaka odnosno klipa. 
-            Opste stratigrafske karakteristike mezozojskih krecnjaka izrazene su u velikoj facijalnoj raznovrsnosti pojedinih clanova u geoloskim nisama. 
-            U tektonskom pogledu ovaj prostor nastao je kada je izdvojena zona (tektonska zona Gorazde) potiskivana prema JugoZapadu, te tako stvorila navlacnu tektonsku strukturu u kojoj preovladava struktura nizeg reda manjih boranja i dosta reversnih povratnih rasjeda. 
-            Zbog bolje proucenih karbonskih i permskih naslaga jasnija je hercinska (varcijska) orogeneza.
-            <hr />
-            Nedostatkom gornjeg karbona i dijelom perma upucuje na geodinamiku (geotektoniku) koja se moze vezati uz astursku ili salsku orogenu fazu. 
-            Alpska orogena faza pocinje trijasom a krajem trijasa izvrsena je i starokimerijska orogena faza. 
-            U geomorfoloskom pogledu prema Petrovic K teritorij Opcine Gorazde u geotektonskom pogledu pripada centralnoj - paleozojsko - trijaskoj zoni. 
-            Ovaj gorsko - dolinski prostor u gornjem dijelu sliva rijeke Drine rasprostire se najvise na sedimentno - metamorfnom supstratu. 
-            Ove planine odnosno hrbati, u strukturnom pogledu su pretezno antiforme: horstovi, horst - antiklinale, antiklinale, antiklinorijumi, te mjestimicno navlake. 
-            Dominatno preovladava fluvijalni reljef predstavljen razlicitim dolinama, manjih rijeka, potoka i rijecica, kao i rijeke Drine.
-            Na prvom mjestu se istice polifaznost i kompozitnost dolinskog prosirenja rijeke Drine sa razvijenim terasama, pedimentima i manjim aluvijalnim ravnima (polojima). 
-            Terase su vise sa coklom a manje akumulativne. Plavine bocnih pritoka, potocica, rijeka i rijecica takodjer su isterasirane u manjoj mjeri i u njima kao i u sljunkovito - pjeskovitim terasama rijeke Drine, naziru se faze nastanka.
-            Slijedovi terasa odrazavaju tektonski, evastaticki i klimatski kompleks uticaja. 
-            Klisurasti dijelovi dolinskog prosirenja nemaju dobro razvijene serije terasa ali mnogi imaju epigenetski i acedentni karakter stim da nije zabiljezeno ni jedna piraterija ni do danasnjih dana.
-        </p>
+        <h3>@ViewBag.Notice</h3>
+        <hr />
+        <p align="justify">For now, this text area is in Bosnian. At the moment we are doing collecting and translating work. Please, be patient, and keep looking for the changes on the website.</p>
     </div>
 
     <style>
+        .indexsadrzaj {
+            background-image: url('../../Content/Walls/weather.png');
+        }
 
- .indexsadrzaj {
-    background: url(http://www.pixelstalk.net/wp-content/uploads/2016/08/Vintage-tavel-cool-hd-wallpaper.jpg);
- }
+        h1 {
+            color: white;
+        }
+
+        .divider {
+            height: 2px;
+        }
+
+        section {
+            height: 400px;
+            padding-top: 80px;
+            padding-bottom: 50px;
+            overflow: auto;
+        }
+
+        .bg-1 {
+            background: url(http://files.vividscreen.info/soft/d60f3af6ae090c5e55c7dfb155ba0232/Broken-Hill-New-South-Wales-and-Motel-1920x1080.jpg) no-repeat top center fixed; /*no-repeat center center fixed;*/
+            color: #fff;
+            background-size: 1140px;
+            /*top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;*/
+        }
+
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+        }
     </style>
 
 </body>

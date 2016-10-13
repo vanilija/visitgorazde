@@ -3,93 +3,55 @@
 }
 @{
     ViewBag.Position = "TEST";
+    ViewBag.Notice = "Translation Notice";
 }
 
 <body class="indexsadrzaj">
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-        <div class="carousel-inner">
-            <div class="item slides active">
-                <div class="slide-3"></div>
-                <div class="hero">
-                    <hgroup>
-                        <h2 class="white">Hostels</h2>
-                        <h3 class="white">in Gorazde</h3>
-                        <!--<h4 class="white">For more infomation, click learn more</h4>-->
-                    </hgroup>
-                    <form style="display: inline" action="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice" method="get">
-                        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <section class="bg-1 text-center">
+        <h1 class="">HOSTELS</h1>
+    </section>
+
+    <div class="sadrzaj">
+        <h3>@ViewBag.Notice</h3>
+        <hr />
+        <p align="justify">For now, this text area is in Bosnian. At the moment we are doing collecting and translating work. Please, be patient, and keep looking for the changes on the website.</p>
     </div>
 
-    <!-- row one -->
+    <style>
+        .indexsadrzaj {
+            background-image: url('../../Content/Walls/weather.png');
+        }
 
-    <div class="SadrzajIndex">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 align="center">@ViewBag.Hi</h4>
-                    <hr />
-                    <p align="justify">
-                        Welcome to industrial, cultural, administrative, university and sports center of Upper Drina's region of Bosnia - podrinje canton.
-                        It is important to know more about where are you going to stay, for that, we will include "Where to stay" section. Which means that you
-                        can check almost every place for staying in the town and surrounding area of the town. Also, like "Where to stay", we will include
-                        "Where to eat" which means that you can check every place in town which serves food.
-                        In the nearest future we plan to implement review section.
-                        <br />
-                        <hr>
-                        <!--What is <b>review section?</b> Basically you can view reviews for places (hotels, motels, restaurants, coffee bars)
-                        from other people. That way you can easily read the reviews and check if certain place is for you.
-                        Feel free to explore the website, if  you have any questions, be sure to check the Info section, or About section.
-                        Drinago wishes you a pleasant stay.-->
-                    </p>
-                    <p><a class="btn btn-default" href="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice">Learn more</a></p>
-                </div>
-                <!--
-                                <div class="col-md-4">
-                                    <h4 align="center">@ViewBag.Position</h4>
-                                    <hr />
-                                    <p align="justify">
-                                        <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
-                                        <br />
-                                        Town of Gorazde and head of Municipality of Gorazde is located in the central part of the Upper Drina.
-                                        Gorazde has a very good geographical and strategic position. City is located on the pediment eastern slopes
-                                        of Jahorina at an altitude of 345 meters. It is interesting to note that the average altitude is 340 meters
-                                        of the European continent.
-                                        The city is located in the valley widening whose origin caused denudation - erosion effect of the Drina river,and its tributaries.
-                                        Valley framed by the expansion of the:
+        h1 {
+            color: white;
+        }
 
-                                            South-East (<b>Biserna</b> - 701 meters),
-                                            South (<b>Samarima</b> - 696 meters),
-                                            Southwest (<b>Mišijak</b> - 618 meters),
-                                            West (<b>Gubavica</b> - 410 meters),
-                                            North (<b>Površnica</b> - 420 meters).
+        .divider {
+            height: 2px;
+        }
 
-                                        Highest peak in the vicinity of the town is (<b>Sjenokos</b> - 960 meters).
-                                    </p>
-                                    <p><a class="btn btn-default" href="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice">Learn more</a></p>
-                                </div>
-                                <div class="col-md-4">
-                                    <h4 align="center">@ViewBag.Area</h4>
-                                    <hr />
-                                    <p align="justify">
-                                        <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
-                                        <br />
-                                        For the creation and development of the city were significant not only water, fertile soil, suitable
-                                        for establishing, but the roads which were impotant that determined Goražde as a natural crossroad.
-                                        Goražde as a settlement was formed at the site of the gravitational center of the wider area of agriculture - livestock region.
-                                        Until 1952, when municipalitz of Goražde is formed, before that it was part of the district ?ajni?e, given that it was more important
-                                        economic center (mining town) at the thime of the Ottoman and Austro-Hungarian period, total of 453 years.
-                                        The significant development of Goražde experiences proclamation (establishment) of the Municipality in early 50s of the last century.
-                                        Settlement of Goražde in history was the main intersection of roads leading to Dalmatian coast, Serbia, Montenegro and Sarajevo.
-                                        Greater significance Goražde recieved during the road reconstruction (Fo?a - Goražde) in 1887.
-                                    </p>
-                                    <p><a class="btn btn-default" href="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice">Learn more</a></p>
-                                </div>-->
-            </div>
-        </div>
-    </div>
+        section {
+            height: 400px;
+            padding-top: 80px;
+            padding-bottom: 50px;
+            overflow: auto;
+        }
+
+        .bg-1 {
+            background: url(http://www.hostelbelgrade.com/images/hostel-belgrade-eye-05.jpg) no-repeat top center fixed; /*no-repeat center center fixed;*/
+            color: #fff;
+            background-size: 1140px;
+            /*top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;*/
+        }
+
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
 </body>
 <!-- ========== END OF ROW ONE ========== -->

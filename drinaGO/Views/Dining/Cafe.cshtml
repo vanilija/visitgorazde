@@ -6,24 +6,12 @@
     ViewBag.Notice = "Café & Bars";
 
 }
-
 <body class="indexsadrzaj">
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-        <div class="carousel-inner">
-            <div class="item slides active">
-                <div class="slide-9"></div>
-                <div class="hero">
-                    <hgroup>
-                        <h2 class="white">Café & Bars</h2>
-                        <h3 class="white">in Gorazde</h3>
-                    </hgroup>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="bg-1 text-center">
+        <h1 class="">Café & Bars</h1>
+    </section>
 
     <div class="sadrzaj">
-        <h3>@ViewBag.Notice</h3>
         <hr />
         <p align="left">
             There are approximately 70 Café & Bars in the Gorazde town area. There is a special place in town which is called Café square.
@@ -156,7 +144,39 @@
     <!-- Custom style for Cafe.html is placed here -->
     <style>
         .indexsadrzaj {
-          background-image: url('../../Content/Walls/weather.png');
+            background-image: url('../../Content/Walls/weather.png');
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .divider {
+            height: 2px;
+        }
+
+        section {
+            height: 400px;
+            padding-top: 80px;
+            padding-bottom: 50px;
+            overflow: auto;
+        }
+
+        .bg-1 {
+            background: url(http://www.theguideistanbul.com/sites/default/files/milkbar-3.jpg) no-repeat top center fixed; /*no-repeat center center fixed;*/
+            color: #fff;
+            border: 2px black solid;
+            background-size: contain;
+            /*top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;*/
+        }
+
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
         }
     </style>
 

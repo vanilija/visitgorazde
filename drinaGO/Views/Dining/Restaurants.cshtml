@@ -7,19 +7,10 @@
     ViewBag.Vision = "Bed & Breakfast";
 }
 <body class="aboutsadrzaj">
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-        <div class="carousel-inner">
-            <div class="item slides active">
-                <div class="slide-2"></div>
-                <div class="hero">
-                    <hgroup>
-                        <h2 class="white">Restaurants</h2>
-                        <h3 class="white">in Gorazde</h3>
-                    </hgroup>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="bg-1 text-center">
+        <h1 class="">RESTAURANTS</h1>
+    </section>
+
     <!-- ========== Editor's Notice ========== -->
     <div class="section1">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
@@ -31,8 +22,9 @@
         </div>
     </div>
     <br>
-  
+
 </body>
+
 <style>
     .section1,
     .section2,
@@ -49,10 +41,38 @@
     }
 
     .aboutsadrzaj {
-       background-image: url('../../Content/Walls/weather.png');
+        background-image: url('../../Content/Walls/weather.png');
     }
 
     .linkgithub {
         color: black;
+    }
+
+
+    h1 {
+        color: white;
+    }
+
+    .divider {
+        height: 2px;
+    }
+
+    section {
+        height: 400px;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        overflow: auto;
+    }
+
+    .bg-1 {
+        background: url(https://wallpaperscraft.com/image/restaurant_table_interior_modern_style_39288_1920x1080.jpg) no-repeat top center fixed; /*no-repeat center center fixed;*/
+        color: #fff;
+        background-size: auto;
+    }
+
+
+    h1 {
+        text-align: center;
+        padding-top: 50px;
     }
 </style>
