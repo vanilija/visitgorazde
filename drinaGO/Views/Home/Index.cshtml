@@ -8,14 +8,11 @@
 
 <body class="indexsadrzaj">
 
-    <section class="bg-1 text-center">
-        <h1 class="">WELCOME</h1>
-        <!--<p class="lead">Add Some Motion</p>-->
-    </section>
-
+    <div class="welcome">
+        <h1 align="center">WELCOME</h1>
+    </div>
     <div class="section1">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <h4 align="center">@ViewBag.Header</h4>
             <hr />
             <p align="center">
                 Enjoy your stay in beatiful city of Goražde. DrinaGo team is wishing you a pleasant stay.
@@ -26,15 +23,11 @@
         </div>
     </div>
 
-    <section class="bg-2">
-        <div class="col-sm-10 col-sm-offset-1 text-center">
-            <h1 class="">EXPLORE</h1>
-        </div>
-    </section>
-
+    <div class="discover">
+        <h1 align="center">EXPLORE</h1>
+    </div>
     <div class="section1">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <h4 align="center">@ViewBag.Header</h4>
             <hr />
             <p align="center">
                 Whether you hike, ride, drive, Goražde can offer you some truly breathtaking scenes.
@@ -45,16 +38,11 @@
         </div>
     </div>
 
-
-
-    <section class="bg-3 text-center">
-        <h1 class="">DISCOVER</h1>
-        <p class="lead"></p>
-    </section>
-
+    <div class="explore">
+        <h1 align="center">DISCOVER</h1>
+    </div>
     <div class="section1">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <h4 align="center">@ViewBag.Header</h4>
             <hr />
             <p align="center">
                 There is many places to eat in Goražde, maybe you prefer to go orders, maybe you prefer to stay and enjoy the view of some great restaurants? You are in the right place.
@@ -64,67 +52,59 @@
             </form>
         </div>
     </div>
+
 </body>
 
 <!-- ========== END OF ROW ONE ========== -->
 <!-- Background color of Index only! -->
+
 <style>
-    body.indexsadrzaj {
-        background-image: url(https://github.com/Nurdoidz/Typogra-Voat/blob/master/Img/Bg-1.png?raw=true);
+
+    .welcome {
+        /* The image used */
+        background-image: url("https://scontent-waw1-1.xx.fbcdn.net/t31.0-8/13346306_1092559084149062_635575833812044121_o.jpg");
+        /* Set a specific height */
+        height: 350px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
+    }
+
+    .explore {
+        /* The image used */
+        background-image: url("http://amxxcs.ru/download/1920x1080-nature-wallpaper-ADYJNuV");
+        /* Set a specific height */
+        height: 350px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
+    }
+
+    .discover {
+        /* The image used */
+        background-image: url("http://wallpapercave.com/wp/ixmt8JQ.jpg");
+        /* Set a specific height */
+        height: 350px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
     }
 
     h1 {
         color: white;
+        padding-top: 120px;
     }
 
-    .divider {
-        height: 2px;
-    }
-
-    section {
-        height: 400px;
-        padding-top: 80px;
-        padding-bottom: 50px;
-        overflow: auto;
-    }
-
-    .bg-1 {
-        background: url(https://scontent-waw1-1.xx.fbcdn.net/t31.0-8/13346306_1092559084149062_635575833812044121_o.jpg) no-repeat top center fixed; /*no-repeat center center fixed;*/
-        color: #fff;
-        background-size: auto;
-    }
-
-    .bg-2 {
-        background: url(http://amxxcs.ru/download/1920x1080-nature-wallpaper-ADYJNuV) no-repeat top center fixed;
-        color: #fff;
-        background-size: auto;
-    }
-
-    .bg-3 {
-        background: url(http://wallpapercave.com/wp/ixmt8JQ.jpg) no-repeat bottom center fixed;
-        color: #fff;
-        background-size: auto;
-    }
-
-    #footer {
-        height: 60px;
-        background-color: #585858;
-        margin-top: 50px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-        #footer a {
-            color: #efefef;
-        }
-
-    h1 {
-        text-align: center;
-        padding-top: 50px;
-    }
-
-    .section1,
-    .section2 {
+    .section1, section2 {
         background-color: white;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         padding-left: 1em;
@@ -133,6 +113,11 @@
         padding-bottom: 0.1em;
         border-radius: 3px;
     }
+
+    body.indexsadrzaj {
+        background-image: url(https://github.com/Nurdoidz/Typogra-Voat/blob/master/Img/Bg-1.png?raw=true);
+    }
+
 </style>
 
 @Scripts.Render("~/bundles/jquery")
